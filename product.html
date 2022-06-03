@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/K-logo.png" type="image/x-icon">
+
+    <!-- Box icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <!-- Custom StyleSheet -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/allProducts.css" />
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <title>KUTU</title>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="navigation container">
+            <div class="logo">
+                <a href="index.html"><img class="logo" src="./images/K-logo.png" alt="img"></a>
+              </div>
+
+            <div class="menu">
+                <div class="top-nav">
+                    <div class="logo">
+                        <h1><img class="logo" src="./images/K-logo.png" alt="img"></h1>
+                      </div>
+                    <div class="close">
+                        <i class="bx bx-x"></i>
+                    </div>
+                </div>
+
+                <ul class="nav-list">
+                    <li class="nav-item">
+                      <a href="./index.html" class="nav-link ">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="product.html" class="nav-link">Products</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="about.html" class="nav-link ">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link ">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="reqQuote.html" class="nav-link ">Request a Quote</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="catalogue.html" class="nav-link ">Catalogue</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="registration.html" class="nav-link">Registration/Login</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="cart.html" class="nav-link icon"><i class="bx bx-shopping-bag"></i></a>
+                    </li>
+                  </ul>
+            </div>
+
+            <a href="cart.html" class="cart-icon">
+                <i class="bx bx-shopping-bag"></i>
+            </a>
+
+            <div class="hamburger">
+                <i class="bx bx-menu"></i>
+            </div>
+        </div>
+    </nav>
+    
+  
+    <!-- All Products -->
+    <section class="section all-products" id="products">
+        <div class="top container">
+            <h1>All Products</h1>
+            <form>
+                <!-- control buttons -->
+                <select>
+                    <option onclick="filterSelection" value="1">Sort By Category</option>
+                    <option onclick="filterSelection" value="2">Adhesives & Tapes</option>
+                    <option onclick="filterSelection" value="3">Books, Pads & Carbon</option>
+                    <option onclick="filterSelection" value="4">Calculators</option>
+                    <option onclick="filterSelection" value="5">Computer Hardware</option>
+                    <option onclick="filterSelection" value="6">Computer Peripherals</option>
+                    <option onclick="filterSelection" value="7">Desktop & Accessories</option>
+                    <option onclick="filterSelection" value="8">Envelopes</option>
+                    <option onclick="filterSelection" value="9">Files & Storage</option>
+                    <option onclick="filterSelection" value="10">Office Machines</option>
+                    <option onclick="filterSelection" value="11">Paper & Board</option>
+                    <option onclick="filterSelection" value="12">Scholastic Supplies</option>
+                    <option onclick="filterSelection" value="13">Writing & Correction</option>
+                    <option onclick="filterSelection" value="14">Writing & Correction</option>
+                    <option onclick="filterSelection" value="15">Writing & Correction</option>
+                    
+                </select>
+                <span><i class='bx bx-chevron-down'></i></span>
+            </form>
+
+
+        </div>
+
+        <!---------------- contact form---------------------- -->
+        <div class="contact-section">
+      
+            
+            <div class="border"></div>
+            <div class="border2"></div>
+            <form class="contact-form" action="index.html" method="post" novalidate>
+              <input type="text" class="contact-form-text" placeholder="Your name" required>
+              <input type="email" class="contact-form-text" placeholder="Your email"required>
+              <textarea class="contact-form-text" placeholder="Please add your stationary list here" required></textarea>
+              <input type="submit" class="contact-form-btn" value="Send">
+            </form>
+         
+        </div>
+       
+
+        <div class="product-center container">
+            <!-- Products -->
+            
+                    <div class="product" active>
+                        <a href="./product-details.html">
+                        <div class="product-header">
+                            <img src="./images/Stationery Final Edits/_DSC8268.jpg" alt="">
+                            <!-- <ul class="icons">
+                            <span><i class="bx bx-heart"></i></span>
+                            <span><i class="bx bx-shopping-bag"></i></span>
+                            <span><i class="bx bx-search"></i></span>
+                            </ul> -->
+                        </div>
+                        <a href="./product-details.html">
+                        <div class="product-footer">
+                            <!--Add href in every section of product to make it clickable-->
+                            <h4>BIC CLIC MEDIUM BALLPOINT PEN</h4>
+                            <div class="descrip">
+                            <h5>BIC Clic Medium Ballpoint pen</h5>
+                            </div>
+                            <h1 class="price">R1000.00</h1>
+                        </div>
+                        </a> 
+                    </a>
+                        </div>
+
+
+                <div class="product">
+                    <a href="./product-details.html">
+                        <div class="product-header">
+                            <img src="./images/Stationery Final Edits/_DSC8275.jpg" alt="">
+                            <!-- <ul class="icons">
+                            <span><i class="bx bx-heart"></i></span>
+                            <span><i class="bx bx-shopping-bag"></i></span>
+                            <span><i class="bx bx-search"></i></span>
+                            </ul> -->
+                        </div>
+                    <a href="./product-details.html">
+                        <div class="product-footer">
+                            <!--Add href in every section of product to make it clickable-->
+                            <h4>DONAU A4 DIVIDERS</h4>
+                            <div class="descrip">
+                            <h5>10Tabs (Not Printed)</h5>
+                            </div>
+                            <h1 class="price">R1000.00</h1>
+                        </div>
+                    </a> 
+                    </a>
+                </div>
+
+
+                <div class="product">
+                    <a href="./product-details.html">
+                    <div class="product-header">
+                        <img src="./images/Stationery Final Edits/_DSC8277.jpg" alt="">
+                        <!-- <ul class="icons">
+                        <span><i class="bx bx-heart"></i></span>
+                        <span><i class="bx bx-shopping-bag"></i></span>
+                        <span><i class="bx bx-search"></i></span>
+                        </ul> -->
+                    </div>
+                    <a href="./product-details.html">
+                    <div class="product-footer">
+                        <!--Add href in every section of product to make it clickable-->
+                        <h4>TREELINE A4 DIVIDERS</h4>
+                        <div class="descrip">
+                        <h5>A To Z 16 Tab (Printed)</h5>
+                        </div>
+                        <h1 class="price">R1000.00</h1>
+                    </div>
+                    </a> 
+                </a>
+                    </div>
+
+
+                <div class="product">
+                    <a href="./product-details.html">
+                    <div class="product-header">
+                        <img src="./images/Stationery Final Edits/_DSC8279.jpg" alt="">
+                        <!-- <ul class="icons">
+                        <span><i class="bx bx-heart"></i></span>
+                        <span><i class="bx bx-shopping-bag"></i></span>
+                        <span><i class="bx bx-search"></i></span>
+                        </ul> -->
+                    </div>
+                    <a href="./product-details.html">
+                    <div class="product-footer">
+                        <!--Add href in every section of product to make it clickable-->
+                        <h5>PSD A4 MULTI-PUNCHED FILING SLEEVES (CLEAR)</h5>
+                        <div class="descrip">
+                        <h5>A4 100 Mic Clear Filing Sleeves</h5>
+                        </div>
+                        <h1 class="price">R1000.00</h1>
+                    </div>
+                    </a> 
+                </a>
+                    </div>
+            </div>
+            <!-- --------------------------devider----------------------- -->
+            <div class="product-center2 container">
+                <!-- Products -->
+                
+                        <div class="product">
+                            <a href="./product-details.html">
+                            <div class="product-header">
+                                <img src="./images/Stationery Final Edits/_DSC8284.jpg" alt="">
+                                <!-- <ul class="icons">
+                                <span><i class="bx bx-heart"></i></span>
+                                <span><i class="bx bx-shopping-bag"></i></span>
+                                <span><i class="bx bx-search"></i></span>
+                                </ul> -->
+                            </div>
+                            <a href="./product-details.html">
+                            <div class="product-footer">
+                                <!--Add href in every section of product to make it clickable-->
+                                <h5>TREFOIL MASONITE CLIPBOARD WITH PLASTIC CLIP</h5>
+                                <div class="descrip">
+                                <h5>230 x 355mm Clipboard Masonite</h5>
+                                </div>
+                                <h1 class="price">R1000.00</h1>
+                            </div>
+                            </a> 
+                        </a>
+                            </div>
+    
+    
+                    <div class="product">
+                        <a href="./product-details.html">
+                            <div class="product-header">
+                                <img src="./images/Stationery Final Edits/_DSC8286.jpg" alt="">
+                                <!-- <ul class="icons">
+                                <span><i class="bx bx-heart"></i></span>
+                                <span><i class="bx bx-shopping-bag"></i></span>
+                                <span><i class="bx bx-search"></i></span>
+                                </ul> -->
+                            </div>
+                        <a href="./product-details.html">
+                            <div class="product-footer">
+                                <!--Add href in every section of product to make it clickable-->
+                                <h5>TREELINE A5 SHORTHAND NOTEBOOK </h5>
+                                <div class="descrip">
+                                <h5>Shorthand Notebook (144 Page)</h5>
+                                </div>
+                                <h1 class="price">R1000.00</h1>
+                            </div>
+                        </a> 
+                        </a>
+                    </div>
+    
+    
+                    <div class="product">
+                        <a href="./product-details.html">
+                          <div class="product-header">
+                            <img src="./images/Stationery Final Edits/_DSC8207.jpg" alt="">
+                            <!-- <ul class="icons">
+                              <span><i class="bx bx-heart"></i></span>
+                              <span><i class="bx bx-shopping-bag"></i></span>
+                              <span><i class="bx bx-search"></i></span>
+                            </ul> -->
+                          </div>
+                          <a href="./product-details.html">
+                          <div class="product-footer">
+                              <!--Add href in every section of product to make it clickable-->
+                              <h4>PARROT METAL PUNCHES (20SHEET) </h4>
+                            <div class="descrip">
+                              <h5>Steel Puncher (Black)</h5>
+                            </div>
+                            <h1 class="price">R1000.00</h1>
+                          </div>
+                        </a> 
+                      </a>
+                        </div>
+    
+    
+                    <div class="product">
+                        <a href="./product-details.html">
+                        <div class="product-header">
+                            <img src="./images/Stationery Final Edits/_DSC8375.jpg" alt="">
+                            <!-- <ul class="icons">
+                            <span><i class="bx bx-heart"></i></span>
+                            <span><i class="bx bx-shopping-bag"></i></span>
+                            <span><i class="bx bx-search"></i></span>
+                            </ul> -->
+                        </div>
+                        <a href="./product-details.html">
+                        <div class="product-footer">
+                            <!--Add href in every section of product to make it clickable-->
+                            <h4>GLOY GLUE STICK</h4>
+                            <div class="descrip">
+                            <h5>20g Glue Stick</h5>
+                            </div>
+                            <h1 class="price">R1000.00</h1>
+                        </div>
+                        </a> 
+                    </a>
+                        </div>
+                </div>
+                <!-- --------------------------devider----------------------- -->
+           
+                </div>
+    </section>
+
+   
+
+    <section class="pagination">
+        <div class=" container">
+            <a href="#"><span>1</span></a>
+            <a href="product-page2.html"><span>2</span></a>
+            <a href="product-page3.html"><span>3</span></a>
+            <a href="product-page4.html"><span>4</span></a>
+            <!-- <span><i class='bx bx-right-arrow-alt'></i></span> -->
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer id="footer" class="section footer">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-center">
+                    <h3>SOCIALS</h3>
+                    <a href="#">Twitter</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Facebook</a>
+                    
+                </div>
+               
+             
+                <div class="footer-center">
+                    <h3>CONTACT US</h3>
+                    <div>
+                        <span>
+                            <i class="fas fa-map-marker-alt"></i>
+                        </span>
+                        415 Jan Smuts Ave, Blairgowrie
+                        Randburg, 2194
+                    </div>
+                    <div>
+                        <span>
+                            <i class="far fa-envelope"></i>
+                        </span>
+                        Name@kutu.co.za
+                    </div>
+                    <div>
+                        <span>
+                            <i class="fas fa-phone"></i>
+                        </span>
+                        011-000-0000
+                    </div>
+                    <div>
+                        <span>
+                            <i class="far fa-paper-plane"></i>
+                        </span>
+                        Johanessburg, RSA
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <!-- Custom Script -->
+    <script src="./js/index.js"></script>
+    <script src="./js/sortCategory.js"></script>
+    <!-- loadmore Script -->
+
+  
+
+  <script>
+
+  </script>
+
+</body>
+
+</html>

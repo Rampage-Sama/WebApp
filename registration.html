@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/K-logo.png" type="image/x-icon">
+
+    <!-- Box icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+
+    <!-- Custom StyleSheet -->
+    <link rel="stylesheet" href="./css/./registration.css" />
+    <link rel="stylesheet" href="./css/./styles.css" />
+    <title>Lorem ipsum</title>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="navigation container">
+            <div class="logo">
+                <h1><img class="logo" src="./images/K-logo.png" alt="img"></h1>
+              </div>
+
+            <div class="menu">
+                <div class="top-nav">
+                    <div class="logo">
+                      <a href="index.html"><img class="logo" src="./images/K-logo.png" alt="img"></a>
+                      </div>
+                    <div class="close">
+                        <i class="bx bx-x"></i>
+                    </div>
+                </div>
+
+                <ul class="nav-list">
+                    <li class="nav-item">
+                      <a href="./index.html" class="nav-link ">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="product.html" class="nav-link">Products</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#about" class="nav-link ">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#contact" class="nav-link ">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="./reqQuote.html" class="nav-link ">Request a Quote</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="./catalogue.html" class="nav-link ">Catalogue</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="registration.html" class="nav-link">Registration/Login</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="cart.html" class="nav-link icon"><i class="bx bx-shopping-bag"></i></a>
+                    </li>
+                  </ul>
+            </div>
+
+            <a href="cart.html" class="cart-icon">
+                <i class="bx bx-shopping-bag"></i>
+            </a>
+
+            <div class="hamburger">
+                <i class="bx bx-menu"></i>
+            </div>
+        </div>
+    </nav>
+<!-- /////////////////////////////////////////////////// -->
+    <!-- Registration form -->
+    
+    <section>
+        <div class="container-reg">
+          <!-- nonnegotiable prevents the site from trying to validate the form  -->
+          <form  id="form" novalidate> 
+              <!---------- Login info ---------->
+            
+      <div class="step step-login ">
+          <div class="reg">Login/Register</div>
+
+          <div class="form-group-L">
+              <label class="label-L" for="usernameLog">User Name</label>
+              <input type="text" id="usernameLog" name="usernameLog" required>
+          </div>
+
+          <div class="form-group-L">
+              <label class="label-L" for="password">Password</label>
+              <input type="password" id="password" name="password" required>
+          </div>
+
+
+          <button type="button" class="login-L">Login</button>
+          <button type="button" class="register-L">Register</button>
+      </div>
+
+                <!---------- Category info ---------->
+            
+      <div class="step step-category active">
+          <div class="cat">Please specify the member registration category</div>
+
+          
+          <div class="form-group-C">
+              <input type="radio" onchange=check(this) id="Client" name="choose">
+              <label class="Client" for="Client" >KUTU Client/Customer</label>
+            </div>
+
+            <div class="form-group-C">
+              <input type="radio" onchange=check(this) id="Sales-Rep" name="choose">
+              <label class="Sales-rep" for="Sales-rep"  >KUTU Sales-Rep</label>
+            </div>
+
+
+            <button type="button" class="previous-btn">Prev</button>
+            <!-- <button type="button" class="btnShow">Next</button> -->
+            <button type="button" class="next-btn">Next</button>
+      </div>
+
+                        <!----------------Instructions for Client and sales-rep--------------->
+      <div class="step instructions ">
+
+          <h1>Client Registration</h1>
+
+
+          <h3>If You Have Chosen Client Registration:</h3>
+          <ul >
+            <li>Please download the registration document and agree to 
+              <br> the terms and conditions.</li>
+            <li>Once you have filled in the document please submit through<br>
+                the website or the designated email provided.</li>
+          </ul>
+                  
+          <h1 class="h2">Sales Representative Registration</h1>
+
+            <h3>If You Have Chosen Sales-rep Registration:</h3>
+            <ul>
+              <li>Please do not fill the registration document in the next slide.</li>
+              <li class="li2">Please fill out from section 1 till the end.</li>
+            </ul>
+  
+          <button type="button" class="previous-btn">Prev</button>
+                    <!-- <button type="button" class="btnShow">Next</button> -->
+                    <button type="button" class="next-btn">Next</button>
+       </div>
+
+          <!----------------Client doc download and T's & C's--------------->
+          <div class="step clientTC ">
+            <h1>Client documents download and agreement</h1>
+            <h4>Please Note: This section is not for Sales representatives</h4>
+            <ul>
+              <li>Please download and fill in the application and submit <br>
+                  it through the website or the designated email on the document   </li>
+            </ul>
+            <ul>
+              <li class="download">DOWNLOAD: <a href="./Docs/Credit Application 003.pdf" download>(Credit Application Document)</a></li>
+            </ul>
+            
+    
+            <button type="button" class="previous-btn">Prev</button>
+                      <!-- <button type="button" class="btnShow">Next</button> -->
+                      <button type="button" class="next-btn">Next</button>
+                </div>
+
+            
+                        <!----------------  Section 1 Personal Information--------------->
+            <div class="step step-1 ">
+                <div class="reg">Sales-rep Registration</div>
+                <h3>Section 1: Personal information</h3>
+              <div class="form-group">
+                <label class="label" for="lastName">Last Name</label>
+                <input type="text" id="lastname" name="lastname">
+              </div>
+
+              <div class="form-group">
+                <label class="label" for="firstName">First Name</label>
+                <input type="text" id="name" name="firstname" required>
+              </div>
+
+              <div class="form-group">
+                <label class="label" for="age">Age</label>
+                <input type="number" id="age" name="age" required>
+              </div>
+
+              <div class="form-group">
+                <label class="label" for="birthday">Date Of Birth</label>
+                <input type="date" id="birthday" name="birthday" required>
+              </div>
+              
+              <div class="form-group">
+                <label class="label" for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+
+              <div class="form-group">
+                <label class="label" for="cell">Cell Number</label>
+                <input type="number" maxlength="10" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" id="cell" name="cell" placeholder="Enter Your Phone Number" required>
+              </div>
+
+              <div class="form-group">
+                <label class="label" for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+              </div>
+
+              <div class="form-group">
+                <label class="label" for="Password">Password</label>
+                <input type="password" id="password" name="password" required>
+              </div>
+
+              <!-- <div class="form-group">
+                <label class="label" for="confirmPass">Confirm Password</label>
+                <input type="password" id="confirmPass" name="confirmPass" required>
+              </div> -->
+
+              <button type="button" class="previous-btn">Prev</button>
+              <button type="button" class="next-btn">Next</button>
+                
+            </div>
+
+<!------------------------------------- Section 2 Address--------------------------->
+ 
+            <div class="step step-2 ">
+                <div class="reg">Sales-rep Registration</div>
+                <h3>Section 2: Address</h3>
+
+                <div class="form-group2">
+                    <label class="label" for="houseNum">House number</label>
+                    <input type="text" id="houseNum" name="houseNum" required>
+                </div>
+
+                <div class="form-group2">
+                    <label class="label" for="stName">Street name</label>
+                    <input type="text" id="stName" name="stName" required>
+                </div>
+
+                <div class="form-group2">
+                    <label class="label" for="postCode">Postal code</label>
+                    <input type="number" id="postCode" name="postCode" required>
+                </div>
+
+                <div class="form-group2">
+                    <label class="label" for="complexName">Complex name</label>
+                    <input type="text" id="complexName" name="complexName" >
+                </div>
+
+                <div class="form-group2">
+                    <label class="label" for="suburb">Suburb</label>
+                    <input type="text" id="suburb" name="suburb" required>
+                </div>
+
+                <div class="form-group2">
+                  <label class="label" for="unitNum">Unit number</label>
+                  <input type="text" id="unitNum" name="unitNum" >
+              </div>
+
+                <div class="form-group2">
+                    <label class="label" for="city">City</label>
+                    <input type="text" id="city" name="city" required>
+                </div>
+
+                <div class="form-group2">
+                    <label class="label" for="province">Province</label>
+                    <input type="text" id="province" name="province" required>
+                </div>
+
+                <button type="button" class="previous-btn">Prev</button>
+                <button type="button" class="next-btn">Next</button>
+            </div>
+ 
+
+
+        <!------------------------------ Section 3: Sponsorship -------------->
+                            
+            
+            <div class="step step-3 ">
+                <div class="reg">Sales-rep Registration</div>
+                <h3>Section 3: Recruitment</h3>
+
+              <label class="label3" for="knowHow">How were you introduced to Kutu</label>
+              <div class="form-group3">
+                <select class="knowHow" name="knowHow" id="knowHow" required>
+                    <option value="knowHow">Social Media</option>
+                    <option value="knowHow">Friend/Family</option>
+                    <option value="knowHow">Meeting</option>
+                    <option value="knowHow">Advertisement</option>
+                    <option value="knowHow">Kutu Sales Representative</option>
+                </select>
+              </div>
+              <div class="ifSalesRep">If you have Chosen KUTU Sales Rep <br>
+            Please specify their name and rep number below</div>
+
+                <div class="form-group3">
+                <label for="rep-name">Rep-Name</label>
+                <input type="text" id="rep-name" name="rep-name" >
+              </div>
+              <div class="form-group3">
+                <label  for="rep-number">Rep-Number</label>
+                <input  type="number" id="rep-number" name="rep-number">
+              </div>
+
+              <button type="button" class="previous-btn">Prev</button>
+              <button type="button" class="next-btn">Next</button>
+            </div>
+                           
+                <!----------------------- Section 4:Banking ------------------------->
+            
+            <div class="step step-4 ">
+                <div class="reg">Sales-rep Registration</div>
+                <h3>Section 4: Banking</h3>  
+              
+                <div class="form-group4">
+                <label for="bank">Bank</label>
+                <input type="text" id="bank" name="bank" required>
+              </div>
+
+              <div class="form-group4">
+                <label for="accountNum">Account Number</label>
+                <input type="number" id="accountNum" name="accountNum" required>
+              </div>
+
+              <div class="form-group4">
+                <label for="accountType">Account Type</label>
+                <input type="text" id="accountType" name="accountType" required>
+              </div>
+
+              <div class="form-group4">
+                <label for="branchCode">Branch Code</label>
+                <input type="number" id="branchCode" name="branchCode" required>
+              </div>
+
+              <button type="button" class="previous-btn">Prev</button>
+              <button type="button" class="next-btn">Next</button>
+            </div>
+
+            <!---------------- section 5:Terms  -------------------->
+
+            <div class="step step-5 ">
+              <div class="reg">Sales-rep Registration</div>
+              <h3>Section 4: T's & C's and Document upload</h3> 
+
+              <h4>Please upload your certified ID document .</h4>
+              <h4 class="months">(Not older than 3 months)</h4>
+
+              <div class="file-upload">
+                <!-- adding multiple files -->
+                <input class="file-upload__input" type="file" name="myFile[]" id="myFile" multiple required>
+                <button class="file-upload__button" type="button">Choose File(s)</button>
+                <span class="file-upload__label"></span>
+              </div>
+
+              <!-- terms and conditions -->
+              <div class="terms">
+               <td><input type="checkbox" id="TsCs" name="choose" required> I Accept Terms And Conditions <a href=" " download>(DOWNLOAD)</a></td> 
+              </div> 
+
+            <button type="button" class="previous-btn">Prev</button>
+            <button type="submit" class="submit-btn">Submit</button>
+          </div>
+
+          </form>
+        </div>
+    </section>
+    
+      </body>
+
+    <!-- Footer -->
+    <footer id="footer" class="section footer">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-center">
+                    <h3>SOCIALS</h3>
+                    <a href="#">Twitter</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Facebook</a>
+                    
+                </div>
+               
+             
+                <div class="footer-center">
+                    <h3>CONTACT US</h3>
+                    <div>
+                        <span>
+                            <i class="fas fa-map-marker-alt"></i>
+                        </span>
+                        415 Jan Smuts Ave, Blairgowrie
+                        Randburg, 2194
+                    </div>
+                    <div>
+                        <span>
+                            <i class="far fa-envelope"></i>
+                        </span>
+                        Name@kutu.co.za
+                    </div>
+                    <div>
+                        <span>
+                            <i class="fas fa-phone"></i>
+                        </span>
+                        011-000-0000
+                    </div>
+                    <div>
+                        <span>
+                            <i class="far fa-paper-plane"></i>
+                        </span>
+                        Johanessburg, RSA
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+      <!-- Custom Script -->
+  <script src="./js/registration.js"></script>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <!-- Custom Script -->
+    <script src="./js/index.js"></script>
+    <!-- file upload javascript -->
+    <script src="./js/fileUpload.js"></script>
+  
+</body>
+
+</html>
